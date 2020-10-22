@@ -1,0 +1,27 @@
+.footer {
+  background-color: $color-dark;
+  padding-top: 45px;
+  color: lighten($color-gray, 10%);
+
+  &-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &-link {
+    color: darken($color-gray, 40%);
+    &:hover {
+      color: lighten($color-gray, 13%);
+    }
+  }
+
+  &-copyright {
+    text-align: center;
+    margin: 20px 0;
+
+    a {
+      color: lighten($color-gray, 12%);
+      font-weight: bold;
+    }
+  }
+}

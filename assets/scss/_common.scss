@@ -1,0 +1,96 @@
+html {
+  font-size: $font-size;
+}
+
+body {
+  font-size: 1rem;
+  font-family: $font-main;
+}
+
+a {
+  color: $color-primary;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $color-accent;
+  }
+}
+
+h1 {
+  font-family: $font-header;
+  @include xs-min {
+    font-size: 3rem;
+    margin-top: -7.5px;
+    margin-bottom: 45px;
+  }
+
+  @include xs {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  &::after {
+    position: absolute;
+    width: 100%;
+    content: "";
+    border-bottom: 3px solid rgba($color-accent, 0.45);
+    @include xs-min {
+      margin: 40px 0 0 15px;
+    }
+    @include xs {
+      margin: 27px 0 0 15px;
+    }
+  }
+}
+
+h2 {
+  font-family: $font-header;
+  @include xs-min {
+    font-size: 2.5rem;
+    margin: 60px 0 45px 45px;
+  }
+  @include xs {
+    margin: 45px 0 30px 45px;
+    font-size: 1.75rem;
+  }
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    content: "";
+    border-bottom: 3px solid rgba($color-accent, 0.45);
+    @include xs-min {
+      margin: 34px 0 0 15px;
+    }
+    @include xs {
+      margin: 24px 0 0 15px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    content: "";
+    border-bottom: 3px solid rgba($color-accent, 0.45);
+    @include xs-min {
+      margin: 10px 0 0 0;
+    }
+    @include xs {
+      margin: 7px 0 0 0;
+    }
+  }
+}
+h3 {
+  @include xs-min {
+    font-size: 1.5rem;
+  }
+  @include xs {
+    font-size: 1.25rem;
+  }
+}
+section {
+  position: relative;
+  overflow: hidden;
+}
